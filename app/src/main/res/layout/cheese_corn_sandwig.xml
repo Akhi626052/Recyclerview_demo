@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+
+        >
+        <!--<ImageView
+            android:id="@+id/imgfood"
+            android:layout_width="116dp"
+            android:layout_height="87dp"
+            android:src="@drawable/food_image2"/>
+-->
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgfood"
+            android:layout_width="116dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/fr"
+            app:srcCompat="@drawable/food_image2"
+            />
+
+
+        <TextView
+            android:id="@+id/cheeseCor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheese Corn Sandwich"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginVertical="5dp"
+            android:layout_toRightOf="@+id/imgfood"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/close"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+           />
+        <TextView
+            android:id="@+id/extra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extra Cheese Corn"
+            android:layout_below="@+id/cheeseCor"
+            android:textSize="12dp"
+
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imgfood"/>
+
+        <TextView
+
+            android:id="@+id/onenientinnine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 119"
+            android:textColor="#FF3727"
+            android:textStyle="bold"
+             android:textSize="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/extra"
+            android:layout_toRightOf="@+id/imgfood"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="12dp"
+
+    >
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/minus"
+            android:layout_below="@+id/extra"
+            android:layout_toRightOf="@+id/onenientinnine"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="140dp"
+            />
+        <TextView
+            android:id="@+id/nutwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02"
+            android:layout_toRightOf="@+id/minus"
+            android:layout_below="@+id/extra"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            />
+         <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/plus"
+            android:layout_toRightOf="@+id/nutwo"
+            android:layout_below="@+id/extra"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+<!--            android:layout_alignRight="@+id/imgfood"/>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

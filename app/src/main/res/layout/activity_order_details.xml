@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity_Order_Details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="20dp"
+        android:background="@drawable/boredit"
+        android:elevation="15dp"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_img"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/drakblack"
+            android:layout_toRightOf="@+id/imgback"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:background="@drawable/boarder_order"
+        android:layout_marginBottom="10dp"
+
+        >
+        <RelativeLayout
+            android:id="@+id/click_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:elevation="15dp"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/ord_tex1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/drakblack"
+                android:textStyle="bold"
+                android:text="Order ID:58967895"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/drakblack"
+                android:text="25 june, 2023 at 10:10 AM"
+                android:layout_below="@+id/ord_tex1"/>
+            <TextView
+                android:id="@+id/TxtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upcoming"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fd_bor"
+            android:elevation="10dp"
+            >
+
+        <ImageView
+            android:id="@+id/fd"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/fd_img"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:layout_marginVertical="15dp"
+            android:layout_toRightOf="@+id/fd">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/drakblack"
+                android:textStyle="bold"
+                android:text="Foods18"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="skye Earth Corporate Park,AB road,indore"/>
+
+        </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_food"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:shapeAppearanceOverlay="@style/fr"
+        android:src="@drawable/food_image2"/>
+    <TextView
+        android:id="@+id/img_fd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cheese Corn Sand Sandwich"
+        android:layout_toRightOf="@+id/img_food"
+        android:textStyle="bold"
+        android:textColor="@color/drakblack"
+        />
+    <TextView
+        android:id="@+id/img_fdr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extra Cheese Corn"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img_food"
+        android:layout_below="@+id/img_fd"/>
+    <TextView
+        android:id="@+id/rs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Rs 199"
+        android:textColor="@color/red"
+        android:layout_below="@+id/img_fdr2"
+        android:layout_toRightOf="@+id/img_food"
+        android:gravity="bottom"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/rs_text"
+        android:layout_below="@+id/img_fdr2"
+        android:layout_alignParentRight="true"
+        android:layout_alignEnd="@+id/rs_text"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="Qty: 02"
+        android:textStyle="bold"
+        android:textColor="@color/drakblack"
+        />
+</RelativeLayout>
+
+
+
+
+
+
+
+    <!--<ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+android:src="@drawable/food_image1"/> -->
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ig_food"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:shapeAppearanceOverlay="@style/fr"
+            android:src="@drawable/food_image2"/>
+        <TextView
+            android:id="@+id/ig_fd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cheese Corn Sand Sandwich"
+            android:layout_toRightOf="@+id/ig_food"
+            android:textStyle="bold"
+            android:textColor="@color/drakblack"
+            />
+        <TextView
+            android:id="@+id/ig_fdr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Extra Cheese Corn"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ig_food"
+            android:layout_below="@+id/ig_fd"/>
+        <TextView
+            android:id="@+id/rs_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Rs 199"
+            android:textColor="@color/red"
+            android:layout_below="@+id/ig_fdr2"
+            android:layout_toRightOf="@+id/ig_food"
+            android:gravity="bottom"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/rs_texts"
+            android:layout_below="@+id/ig_fdr2"
+            android:layout_alignParentRight="true"
+            android:layout_alignEnd="@+id/rs_texts"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="Qty: 02"
+            android:textStyle="bold"
+            android:textColor="@color/drakblack"
+            />
+    </RelativeLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Delivery Address"
+    android:layout_marginLeft="10dp"
+    android:textStyle="bold"
+    android:textColor="@color/drakblack"
+    android:layout_marginBottom="5dp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skye Earth Corporate Park, 605,AB road, indore, Madhya Pradesh 452010"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="+91 9123456789"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/drakblack"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Rs 388"
+        android:textStyle="bold"
+        android:textColor="@color/drakblack"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tax and Fees"
+            android:textColor="@color/drakblack"
+            android:layout_marginLeft="10dp"
+
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/drakblack"
+            android:text="Rs 22"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/drakblack"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Rs 20"
+            android:textColor="@color/drakblack"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Charges"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/drakblack"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Rs 20"
+            android:textColor="@color/drakblack"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bor_upcom_all"
+        android:paddingVertical="20dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Grand Total"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/drakblack"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Rs 400"
+            android:textColor="@color/drakblack"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/BtnAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "View invoice"
+        android:textAllCaps="false"
+        android:background="@drawable/buborder"
+        android:textColor="@color/white"
+        android:paddingHorizontal="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"/>
+
+
+           <TextView
+               android:id="@+id/TxtTemp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="ll"
+               android:textColor="@color/black"
+               android:textSize="20sp">
+
+           </TextView>
+
+
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+    </LinearLayout>

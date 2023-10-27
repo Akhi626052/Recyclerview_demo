@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MyAddress">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/eleborder">
+
+
+
+
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/comadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daizzy info System"
+                android:paddingLeft="10dp"
+                android:textColor="@color/drakblack"
+                android:textSize="16dp"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/bin"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/addcompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Skye Earth corporate Park, 605,AB road,indore, Madhya Pradesh 452010
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+919123456789"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>

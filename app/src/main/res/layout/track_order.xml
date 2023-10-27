@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Track_Order"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="20dp"
+        android:background="@drawable/boredit"
+        android:elevation="15dp"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_img"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track Order"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/drakblack"
+            android:layout_toRightOf="@+id/imgback"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            android:background="@drawable/boarder_order"
+            android:layout_marginBottom="10dp"
+
+            >
+            <RelativeLayout
+                android:id="@+id/click_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:elevation="15dp"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/ord_tex1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/drakblack"
+                    android:textStyle="bold"
+                    android:text="Order ID:58967895"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/drakblack"
+                    android:text="25 june, 2023 at 10:10 AM"
+                    android:layout_below="@+id/ord_tex1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upcoming"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fd_bor"
+                android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/fd"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/fd_img"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:layout_marginVertical="15dp"
+                android:layout_toRightOf="@+id/fd">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/drakblack"
+                    android:textStyle="bold"
+                    android:text="Foods18"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="skye Earth Corporate Park,AB road,indore"/>
+
+            </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+<!--    <com.badoualy.stepperindicator.StepperIndicator-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:stpi_stepCount="5"/>-->
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_marginTop="190dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:paddingHorizontal="90dp"
+        app:backgroundTint="#FF3727"
+        android:background="@drawable/bor_edit"
+        android:layout_marginBottom="50dp"
+        />
+
+
+
+
+</LinearLayout>

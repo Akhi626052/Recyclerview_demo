@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.OrderFragment"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="20dp"
+        android:background="@drawable/boredit"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/back_img"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Order"
+            android:textStyle="bold"
+            android:textColor="@color/drakblack"
+            android:layout_toRightOf="@+id/imgback"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Upcoming"
+        android:paddingVertical="5dp"
+        android:textColor="@color/drakblack"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:background="@drawable/boarder_order">
+
+
+        <RelativeLayout
+            android:id="@+id/click_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/ord_tex1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/drakblack"
+                android:textStyle="bold"
+                android:text="Order ID:58967895"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/drakblack"
+                android:text="25 june, 2023 at 10:10 AM"
+                android:layout_below="@+id/ord_tex1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 199"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fd_bor">
+
+    <ImageView
+        android:id="@+id/fd"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/fd_img"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:layout_marginVertical="5dp"
+        android:layout_toRightOf="@+id/fd">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/drakblack"
+    android:textStyle="bold"
+    android:text="Foods18"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="skye Earth Corporate Park,AB road,indore"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/drakblack"
+
+        android:text="3 Items"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/upcom_all_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fd"
+        android:paddingVertical="10dp"
+        android:background="@drawable/bor_upcom_all"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/four_five_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/drakblack"
+            android:textStyle="bold"
+            android:text="4.5"/>
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/star"
+            android:layout_toRightOf="@+id/four_five_text"/>
+        <TextView
+            android:id="@+id/De_Fai_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upcoming"
+            android:textColor="@color/drakblack"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_star"/>
+        <TextView
+            android:id="@+id/tr_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="3dp"
+            android:text="Track order"
+            android:textColor="@color/red"
+            android:layout_marginRight="5dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_fast_take"
+            android:layout_toLeftOf="@+id/tr_order"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upcom_all_img">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="View Details"
+            android:textColor="@color/red"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  History"
+            android:paddingVertical="5dp"
+            android:textColor="@color/drakblack"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            android:background="@drawable/boarder_history"
+
+            >
+
+
+            <RelativeLayout
+                android:id="@id/click_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/ord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Order ID:58967895"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="25 june, 2023 at 10:10 AM"
+                    android:layout_below="@+id/ord"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 199"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fd_bor"
+                >
+
+                <ImageView
+                    android:id="@+id/fd_food"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/fd_img"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_toRightOf="@+id/fd_food">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/drakblack"
+                        android:textStyle="bold"
+                        android:text="Foods18"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="skye Earth Corporate Park,AB road,indore"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/drakblack"
+
+                        android:text="3 Items"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/upcom_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fd_food"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/bor_upcom_all"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/four_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/drakblack"
+                        android:textStyle="bold"
+                        android:text="4.5"/>
+                    <ImageView
+                        android:id="@+id/img_str"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/star"
+                        android:layout_toRightOf="@+id/four_text"/>
+                    <TextView
+                        android:id="@+id/De_Fai_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Failed"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/img_str"/>
+                    <TextView
+                        android:id="@+id/re_ord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="3dp"
+                        android:text="Re-Order"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_fast_take"
+                        android:layout_toLeftOf="@+id/re_ord"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/upcom_img">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="8dp"
+                        android:text="View Details"
+                        android:textColor="@color/red"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            android:background="@drawable/boarder_gray">
+            <RelativeLayout
+                android:id="@+id/click_id3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Order ID:58967895"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="25 june, 2023 at 10:10 AM"
+                    android:layout_below="@+id/order"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 199"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fd_bor"
+                >
+
+                <ImageView
+                    android:id="@+id/fd_foods"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/fd_img"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_toRightOf="@+id/fd_foods">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/drakblack"
+                        android:textStyle="bold"
+                        android:text="Foods18"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="skye Earth Corporate Park,AB road,indore"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/drakblack"
+
+                        android:text="3 Items"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/upcom_imgs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fd_foods"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/bor_upcom_all"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/four_texts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/drakblack"
+                        android:textStyle="bold"
+                        android:text="4.5"/>
+                    <ImageView
+                        android:id="@+id/img_strs"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/star"
+                        android:layout_toRightOf="@+id/four_texts"/>
+                    <TextView
+                        android:id="@+id/De_Fai_txts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Failed"
+
+                        android:textColor="#14C556"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/img_strs"/>
+                    <TextView
+                        android:id="@+id/re_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="3dp"
+                        android:text="FeedBack"
+                        android:textColor="@color/drakblack"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_fast_take"
+                        android:layout_toLeftOf="@+id/re_or"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/upcom_imgs">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="8dp"
+                        android:text="View Details"
+                        android:textColor="@color/red"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="50dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+

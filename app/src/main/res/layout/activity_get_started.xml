@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Get_Started"
+    android:weightSum="2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/food_image1"
+        android:paddingBottom="10dp"
+        android:layout_weight="1.2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.2"
+        android:background="@drawable/edit_backgrounbottom"
+
+        android:layout_marginTop="-100dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good Food's"
+           android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:textSize="29dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fast Delivery"
+            android:gravity="center_horizontal"
+            android:textSize="29dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reference site about Lorem"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ipsum, giving information on its"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            />
+        <Button
+            android:id="@+id/buttonGet_Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:backgroundTint="#F67D26"
+            android:paddingHorizontal="40dp"
+            android:background="@drawable/edit1_border"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

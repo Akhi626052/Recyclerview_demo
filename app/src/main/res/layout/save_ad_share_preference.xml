@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SaveAdSharePreference">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:text="SharePreference"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_bo">
+
+
+
+        <TextView
+            android:id="@+id/stateShr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/cityShr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/nameShr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+           />
+        <TextView
+     android:id="@+id/AddressShr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:padding="10dp" />
+        <TextView
+            android:id="@+id/MobileShr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:padding="10dp" />
+        <TextView
+            android:id="@+id/CountryNaShr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:padding="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/listShr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:lines="6"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:padding="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

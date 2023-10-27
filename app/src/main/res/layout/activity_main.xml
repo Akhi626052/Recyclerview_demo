@@ -1,0 +1,459 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="15dp">
+            <ImageView
+                android:id="@+id/imgpro"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/man"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/imgpro"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/textwelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgpro"
+                    android:text="Welcome" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alex Lucifer"
+                    android:textSize="16dp"
+                    android:textColor="@color/drakblack"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgsearch"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/search_img"
+                android:layout_toLeftOf="@id/ImgNotification"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+            <ImageView
+                android:id="@+id/ImgNotification"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/bell"
+                android:textSize="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:background="#E9E9E9">
+        <ImageView
+            android:id="@+id/Address"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:src="@drawable/location"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="420,AB road, indore ,Madhya Pradesh 452010"
+            android:textSize="18dp"
+            android:paddingTop="10dp"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/rectangle_img"
+        android:scaleType="fitXY"
+        android:layout_margin="20dp"/>
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="10dp">
+
+       <TextView
+           android:id="@+id/textcategories"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Categories"
+           android:textSize="20sp"
+           android:textColor="@color/drakblack"
+          />
+
+       <TextView
+           android:id="@+id/textviewAll"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="View All"
+           android:layout_centerVertical="true"
+
+           android:layout_alignParentRight="true"/>
+   </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textcategories2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popular Now"
+                android:textSize="20sp"
+                android:textColor="@color/drakblack"
+                />
+
+            <TextView
+                android:id="@+id/textviewAll2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="View All"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPopuler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:src="@drawable/re_food"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Now"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/drakblack"
+            android:layout_marginVertical="10dp"
+            android:textStyle="bold"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="10dp"
+    android:weightSum="2">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    >
+
+
+
+
+
+
+
+
+
+
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_border2"
+        android:layout_marginLeft="5dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_border3">
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="10dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/rupee"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/myImageViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="199"
+                android:textColor="@color/red"
+                android:textSize="11dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/myImageViewText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="10% off"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<RelativeLayout
+    android:id="@+id/fdimg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_food"
+        />
+
+
+
+</RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/fdsrc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fdimg"
+        android:text="Cheese Corn Sandwich"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/drakblack"/>
+    <TextView
+        android:id="@+id/screenFoodDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Cheese corn"
+        android:layout_below="@id/fdsrc"
+        android:layout_marginLeft="10dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/screenFoodDe"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="7dp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/star"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="7dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(25+)"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/veg"
+            android:layout_marginTop="7dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/fdimg1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/foodsrc"
+            />
+        <TextView
+            android:id="@+id/fdsrc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fdimg1"
+            android:text="Cheese Corn Sandwich"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/drakblack"/>
+        <TextView
+            android:id="@+id/screenFoodDe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extra Cheese corn"
+            android:layout_below="@id/fdsrc1"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screenFoodDe1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="7dp"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/star"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(25+)"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="5dp"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/veg"
+                android:layout_marginTop="7dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

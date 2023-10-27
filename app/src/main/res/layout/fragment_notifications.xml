@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="30dp"
+        android:elevation="5dp"
+        android:background="@drawable/boredit">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:tint="@color/drakblack"
+            android:paddingVertical="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_img"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textSize="18dp"
+            android:textColor="@color/drakblack"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/profile_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/ImgCamera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/camera_dit"
+            android:src="@drawable/camera"
+            app:tint="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.416"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.84" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    >
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rahul Eendaz"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/drakblack"
+        />
+    <ImageView
+        android:id="@+id/update_igNxt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/pen"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="170dp"
+        app:tint="@color/drakblack"
+        android:layout_centerVertical="true"
+        android:paddingVertical="5dp"
+
+        />
+
+
+
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:layout_marginTop="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="user@gmail.com"/>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bell"
+            app:tint="@color/red"
+            android:padding="3dp" />
+        <TextView
+            android:id="@+id/noti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/drakblack"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/notification"/>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:buttonTint="@color/drakblack"
+            android:switchMinWidth="56dp"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/password"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/password"
+            app:tint="@color/red"
+            android:padding="3dp" />
+        <TextView
+            android:id="@+id/changepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/drakblack"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/password"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/contact"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/contact_icon"
+            app:tint="@color/red"
+            android:padding="3dp" />
+        <TextView
+            android:id="@+id/con_with_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact with us"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/drakblack"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/contact"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/ter_cond"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/terms_conditions_icon"
+            app:tint="@color/red"
+            android:padding="3dp" />
+        <TextView
+            android:id="@+id/cont_with_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact with us"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/drakblack"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/ter_cond"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/pri_condition"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/privacy_and_conditions"
+            app:tint="@color/red"
+            android:padding="3dp" />
+        <TextView
+            android:id="@+id/privacy_Policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/drakblack"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/pri_condition"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/helps"
+            app:tint="@color/red"
+            android:padding="3dp" />
+        <TextView
+            android:id="@+id/Helps_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/drakblack"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/help"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LogBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/bor_edit">
+
+        <ImageView
+            android:id="@+id/power"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/pow_butt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/power"
+            android:paddingHorizontal="20dp"
+            android:text="Log Out"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

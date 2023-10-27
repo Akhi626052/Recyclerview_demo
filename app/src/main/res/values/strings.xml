@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Recyclerview_demo</string>
+    <string name="title_activity_bottom_navigation_bar">BottomNavigationBar</string>
+    <string name="title_home">Home</string>
+    <string name="title_order">Order</string>
+    <string name="title_dashboard">CardView</string>
+    <string name="title_notifications">Setting</string>
+    <string name="title_Order" />
+
+
+    <!--<String-array name="my_array">
+    <item >  element1   </item>
+    <item >  element2   </item>
+    <item >  element3   </item>
+    <item >  element4   </item>
+    <item >  element5   </item>
+    <item >  element6   </item>
+    <item >  element7   </item>
+</String-array>-->
+
+
+</resources>

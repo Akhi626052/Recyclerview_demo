@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Rate_Us"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="30dp"
+        android:elevation="5dp"
+        android:background="@drawable/boredit">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:tint="@color/drakblack"
+            android:layout_marginLeft="5dp"
+            android:paddingVertical="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_img"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate Us"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/drakblack"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/boarder_gray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/click_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp"
+
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/ord_tex1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/drakblack"
+                        android:textStyle="bold"
+                        android:text="Order ID:58967895"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/drakblack"
+                        android:text="25 june, 2023 at 10:10 AM"
+                        android:layout_below="@+id/ord_tex1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 199"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fd_bor"
+                    >
+
+                <ImageView
+                    android:id="@+id/food_src"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/fd_img"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_toRightOf="@+id/food_src">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/drakblack"
+                        android:textStyle="bold"
+                        android:text="Foods18"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="skye Earth Corporate Park,AB road,indore"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/drakblack"
+
+                        android:text="3 Items"/>
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please rate us for our"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/drakblack"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="service"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/drakblack"/>
+
+
+
+
+        <RatingBar
+            android:id="@+id/rating_us"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="write review"
+            android:maxLines="6"
+            android:lines="6"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            />
+
+
+
+</LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:paddingHorizontal="90dp"
+
+            app:backgroundTint="#FF3727"
+            android:background="@drawable/bor_edit"
+            android:layout_marginBottom="50dp"
+            />
+
+            />
+    </LinearLayout>
+</LinearLayout>

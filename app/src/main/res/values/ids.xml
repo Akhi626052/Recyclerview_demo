@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recyclerView1" type="id" />
+    <item name="comname" type="id" />
+    <item name="compname" type="id" />
+    <item name="click_id2" type="id" />
+    <item name="lg_No" type="id" />
+    <item name="tvs_id" type="id" />
+</resources>

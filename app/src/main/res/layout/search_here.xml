@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Search_Here"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="6dp"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgFood18"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_food"
+            android:theme="@style/sr"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10% off"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="5dp"
+            android:background="@drawable/offedittext"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Seller"
+            android:layout_below="@+id/imgFood18"
+            android:gravity="center"
+            android:paddingHorizontal="17dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bottom_edittext"
+            />
+
+        <TextView
+            android:id="@+id/textTextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgFood18"
+            android:text="Cheese Corn sandwitch"
+            android:textColor="@color/drakblack"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/textTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extra Cheese Corn"
+            android:layout_toRightOf="@+id/imgFood18"
+            android:layout_below="@+id/textTextView11"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:id="@+id/linLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgFood18"
+            android:layout_below="@+id/textTextView2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(25+)"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/veg"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 199"
+            android:textSize="16dp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/imgFood18"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/linLayout"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" + Add "
+
+            android:layout_below="@+id/linLayout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_bor"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
